@@ -3,7 +3,7 @@ angular
   .controller("quizAppController", function($interval, $timeout, $scope) {
     var quizController = this;
     var totalQuestions = 10;
-    var questionTime = 5;
+    var questionTime = 15;
     $scope.results = [];
     quizController.currentIndex = 0;
     quizController.startQuizFlag = true;
@@ -11,7 +11,7 @@ angular
     quizController.showQuestion = false;
     quizController.showDashboard = false;
 
-    quizController.timer = 5;
+    quizController.timer = 10;
     quizController.timerStyle = {
       "font-size": "200px",
       color: getRandomColor()
