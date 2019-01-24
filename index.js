@@ -139,12 +139,6 @@ app.use("/get/:id", async (req, res) => {
 });
 
 app.post("/telemetry", function(req, res) {
-  try {
-    fs.appendFileSync("telemetrydata.json", JSON.stringify(req.body));
-  } catch (error) {
-    console.log("error saving to file telemetry data");
-  }
-
   var options = {
     method: "POST",
     url: "http://52.172.188.118:3000/v1/telemetry",
