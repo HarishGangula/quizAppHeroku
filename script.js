@@ -3,7 +3,7 @@ angular
   .controller("quizAppController", function($interval, $timeout, $scope) {
     var quizController = this;
     var totalQuestions = 10;
-    var questionTime = 15;
+    var questionTime = 10;
     $scope.results = [];
     quizController.currentIndex = 0;
     quizController.startQuizFlag = true;
